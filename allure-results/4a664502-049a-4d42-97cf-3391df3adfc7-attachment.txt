@@ -1,0 +1,12 @@
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/user
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/user "HTTP/1.1 200 OK"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 200 http://localhost:8080/api/v3/user
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST PUT http://localhost:8080/api/v3/user/user_update_f969daa1
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: PUT http://localhost:8080/api/v3/user/user_update_f969daa1 "HTTP/1.1 200 OK"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 200 http://localhost:8080/api/v3/user/user_update_f969daa1
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST GET http://localhost:8080/api/v3/user/user_update_f969daa1
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: GET http://localhost:8080/api/v3/user/user_update_f969daa1 "HTTP/1.1 200 OK"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 200 http://localhost:8080/api/v3/user/user_update_f969daa1
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST DELETE http://localhost:8080/api/v3/user/user_update_f969daa1
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: DELETE http://localhost:8080/api/v3/user/user_update_f969daa1 "HTTP/1.1 200 OK"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 200 http://localhost:8080/api/v3/user/user_update_f969daa1

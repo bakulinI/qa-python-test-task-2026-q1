@@ -1,0 +1,32 @@
+[32mINFO    [0m httpx:_client.py:1025 HTTP Request: GET http://localhost:8080/api/v3/store/inventory "HTTP/1.1 200 OK"
+[32mINFO    [0m petstore.tests:conftest.py:35 Petstore is ready at http://localhost:8080/api/v3
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST POST http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 500 http://localhost:8080/api/v3/pet

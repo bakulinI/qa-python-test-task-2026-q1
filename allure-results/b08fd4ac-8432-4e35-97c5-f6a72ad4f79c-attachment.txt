@@ -1,0 +1,1 @@
+[32mINFO    [0m petstore.tests:conftest.py:51 REQUEST GET http://localhost:8080/api/v3/user/non_existing_user_123456

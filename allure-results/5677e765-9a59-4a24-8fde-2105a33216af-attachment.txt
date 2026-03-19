@@ -1,0 +1,12 @@
+2026-03-19 14:48:22,813 [INFO] petstore.tests: REQUEST POST http://localhost:8080/api/v3/user
+2026-03-19 14:48:22,827 [INFO] httpx: HTTP Request: POST http://localhost:8080/api/v3/user "HTTP/1.1 200 OK"
+2026-03-19 14:48:22,828 [INFO] petstore.tests: RESPONSE 200 http://localhost:8080/api/v3/user
+2026-03-19 14:48:22,830 [INFO] petstore.tests: REQUEST PUT http://localhost:8080/api/v3/user/user_update_f969daa1
+2026-03-19 14:48:22,882 [INFO] httpx: HTTP Request: PUT http://localhost:8080/api/v3/user/user_update_f969daa1 "HTTP/1.1 200 OK"
+2026-03-19 14:48:22,882 [INFO] petstore.tests: RESPONSE 200 http://localhost:8080/api/v3/user/user_update_f969daa1
+2026-03-19 14:48:22,882 [INFO] petstore.tests: REQUEST GET http://localhost:8080/api/v3/user/user_update_f969daa1
+2026-03-19 14:48:22,888 [INFO] httpx: HTTP Request: GET http://localhost:8080/api/v3/user/user_update_f969daa1 "HTTP/1.1 200 OK"
+2026-03-19 14:48:22,888 [INFO] petstore.tests: RESPONSE 200 http://localhost:8080/api/v3/user/user_update_f969daa1
+2026-03-19 14:48:22,891 [INFO] petstore.tests: REQUEST DELETE http://localhost:8080/api/v3/user/user_update_f969daa1
+2026-03-19 14:48:22,895 [INFO] httpx: HTTP Request: DELETE http://localhost:8080/api/v3/user/user_update_f969daa1 "HTTP/1.1 200 OK"
+2026-03-19 14:48:22,895 [INFO] petstore.tests: RESPONSE 200 http://localhost:8080/api/v3/user/user_update_f969daa1

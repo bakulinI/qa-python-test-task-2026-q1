@@ -1,0 +1,3 @@
+2026-03-19 14:48:22,641 [INFO] petstore.tests: REQUEST GET http://localhost:8080/api/v3/user/non_existing_user_123456
+2026-03-19 14:48:22,653 [INFO] httpx: HTTP Request: GET http://localhost:8080/api/v3/user/non_existing_user_123456 "HTTP/1.1 404 Not Found"
+2026-03-19 14:48:22,653 [INFO] petstore.tests: RESPONSE 404 http://localhost:8080/api/v3/user/non_existing_user_123456

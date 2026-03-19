@@ -1,0 +1,3 @@
+[32mINFO    [0m petstore.tests:conftest.py:46 REQUEST GET http://localhost:8080/api/v3/user/non_existing_user_123456
+[32mINFO    [0m httpx:_client.py:1740 HTTP Request: GET http://localhost:8080/api/v3/user/non_existing_user_123456 "HTTP/1.1 404 Not Found"
+[32mINFO    [0m petstore.tests:conftest.py:50 RESPONSE 404 http://localhost:8080/api/v3/user/non_existing_user_123456

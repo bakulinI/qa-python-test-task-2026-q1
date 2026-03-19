@@ -1,0 +1,17 @@
+2026-03-19 14:48:19,713 [INFO] httpx: HTTP Request: GET http://localhost:8080/api/v3/store/inventory "HTTP/1.1 200 OK"
+2026-03-19 14:48:19,714 [INFO] petstore.tests: Petstore is ready at http://localhost:8080/api/v3
+2026-03-19 14:48:20,697 [INFO] petstore.tests: REQUEST POST http://localhost:8080/api/v3/pet
+2026-03-19 14:48:20,732 [INFO] httpx: HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+2026-03-19 14:48:20,732 [INFO] petstore.tests: RESPONSE 500 http://localhost:8080/api/v3/pet
+2026-03-19 14:48:20,947 [INFO] petstore.tests: REQUEST POST http://localhost:8080/api/v3/pet
+2026-03-19 14:48:21,002 [INFO] httpx: HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+2026-03-19 14:48:21,002 [INFO] petstore.tests: RESPONSE 500 http://localhost:8080/api/v3/pet
+2026-03-19 14:48:21,212 [INFO] petstore.tests: REQUEST POST http://localhost:8080/api/v3/pet
+2026-03-19 14:48:21,264 [INFO] httpx: HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+2026-03-19 14:48:21,264 [INFO] petstore.tests: RESPONSE 500 http://localhost:8080/api/v3/pet
+2026-03-19 14:48:21,478 [INFO] petstore.tests: REQUEST POST http://localhost:8080/api/v3/pet
+2026-03-19 14:48:21,531 [INFO] httpx: HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+2026-03-19 14:48:21,531 [INFO] petstore.tests: RESPONSE 500 http://localhost:8080/api/v3/pet
+2026-03-19 14:48:21,746 [INFO] petstore.tests: REQUEST POST http://localhost:8080/api/v3/pet
+2026-03-19 14:48:21,792 [INFO] httpx: HTTP Request: POST http://localhost:8080/api/v3/pet "HTTP/1.1 500 Internal Server Error"
+2026-03-19 14:48:21,792 [INFO] petstore.tests: RESPONSE 500 http://localhost:8080/api/v3/pet
