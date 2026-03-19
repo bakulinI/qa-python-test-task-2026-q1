@@ -1,0 +1,1 @@
+{"uuid": "e2f5645f-a813-4ef0-8675-d04ad7ec172d", "children": ["2beb4a52-a6de-4482-8bf2-68551e6578eb"], "befores": [{"name": "async_client", "status": "passed", "start": 1773916047382, "stop": 1773916048350}], "afters": [{"name": "async_client::finalizer", "status": "passed", "start": 1773916048374, "stop": 1773916048376}], "start": 1773916047382, "stop": 1773916048376}

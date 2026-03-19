@@ -185,3 +185,77 @@ docker compose down
    docker compose down
    ```
 4. Прислать ссылку на свой форк
+
+---
+
+## Реализация в этом форке (кратко)
+
+### Покрытие эндпоинтов
+
+- **Pet**:
+  - `POST /pet` — создание питомца (позитивные сценарии + E2E, см. `tests/pet` и `tests/e2e`)
+  - `PUT /pet` — обновление питомца
+  - `GET /pet/findByStatus` — поиск по статусу
+  - `GET /pet/findByTags` — поиск по тегам
+  - `GET /pet/{petId}` — получение по ID
+  - `DELETE /pet/{petId}` — удаление питомца
+- **Store**:
+  - `GET /store/inventory` — получение инвентаря
+  - `POST /store/order` — создание заказа
+  - `GET /store/order/{orderId}` — получение заказа по ID
+  - `DELETE /store/order/{orderId}` — удаление заказа
+- **User**:
+  - `POST /user` — создание пользователя
+  - `POST /user/createWithList` — создание списка пользователей
+  - `GET /user/login` / `GET /user/logout` — логин/логаут
+  - `GET /user/{username}` / `DELETE /user/{username}` — получение и удаление пользователя
+
+Тесты организованы по доменам в папках `tests/pet`, `tests/store`, `tests/user` и `tests/e2e`, все тесты асинхронные и используют `pytest-asyncio`, параллельный запуск реализован через `pytest-xdist` (`-n auto` в `pytest.ini`), Allure подключён через `allure-pytest` (`--alluredir=allure-results`).
+
+### Известный дефект Swagger Petstore (образ `swaggerapi/petstore3:1.0.27`)
+
+В процессе выполнения задания был обнаружен стабильный дефект сервиса Swagger Petstore: при обращении к эндпоинту `POST /pet` сервер возвращает **500 Internal Server Error** даже для валидного JSON, сгенерированного самим Swagger UI.
+
+Пример запроса (из Swagger UI):
+
+```bash
+curl -X 'POST' \
+  'http://localhost:8080/api/v3/pet' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 10,
+  "name": "doggiech",
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}'
+```
+
+Пример ответа сервера:
+
+```json
+{
+  "code": 500,
+  "message": "There was an error processing your request. It has been logged (ID: b258e24fd37053f5)"
+}
+```
+
+Этот же результат (HTTP 500) воспроизводится:
+
+- при отправке аналогичного запроса из Swagger UI;
+- при прямом HTTP-запросе через `httpx`/`curl` в обход тестового фреймворка;
+- в автотестах, использующих `POST /pet`.
+
+Поэтому часть тестов, зависящих от `POST /pet` (создание питомцев и цепочки E2E, использующие этот шаг), падает именно из-за дефекта сервиса, а не логики тестов. В соответствующих тестах в коде добавлены явные комментарии с указанием на эту особенность образа `swaggerapi/petstore3:1.0.27`. Остальные тесты (не зависящие от `POST /pet`) проходят успешно и демонстрируют как позитивные, так и негативные сценарии, а также асинхронность и параллельный запуск.
